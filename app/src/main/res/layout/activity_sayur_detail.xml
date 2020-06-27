@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".SayurDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewDetail"
+                android:src="@drawable/ic_android"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:id="@+id/txtNamaPasar"
+                android:layout_below="@id/imageViewDetail"
+                android:text="Nama Pasar"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtKetNamaPengguna"
+                android:layout_below="@+id/txtNamaPasar"
+                android:text="Nama Penjual : "
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtNamaPengguna"
+                android:layout_below="@+id/txtNamaPasar"
+                android:text="Nama Pengguna"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtKetNamaPengguna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtKetNamaSayur"
+                android:layout_below="@+id/txtNamaPengguna"
+                android:text="Nama Sayur : "
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtNamaSayur"
+                android:layout_below="@+id/txtNamaPengguna"
+                android:text="Buncis"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtKetNamaSayur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtKet"
+                android:layout_below="@+id/txtKetNamaSayur"
+                android:text="Stok : "
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtStok"
+                android:layout_below="@+id/txtKetNamaSayur"
+                android:text="2"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtKet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtKeterangan"
+                android:layout_below="@+id/txtKetNamaSayur"
+                android:text="kg"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtStok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtKetHarga"
+                android:layout_below="@+id/txtKet"
+                android:text="Harga : "
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtHarga"
+                android:layout_below="@+id/txtKet"
+                android:text="10.000"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtKetHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPer"
+                android:layout_below="@+id/txtKet"
+                android:text="/"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtKetHrg"
+                android:layout_below="@+id/txtKet"
+                android:text="kg"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtPer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_Minus"
+                android:layout_below="@id/txtHarga"
+                android:onClick="increment"
+                android:text="-"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/textJumlah"
+                android:layout_below="@id/txtHarga"
+                android:text="0"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="7dp"
+                android:layout_toRightOf="@+id/btn_Minus"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_Plus"
+                android:onClick="increment"
+                android:text="+"
+                android:layout_below="@id/txtHarga"
+                android:layout_toRightOf="@+id/textJumlah"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                tools:ignore="OnClick" />
+
+            <ImageButton
+                android:id="@+id/btn_Beli"
+                android:layout_below="@id/btn_Plus"
+                android:src="@drawable/ic_shopping_cart"
+                android:background="@color/colorPrimary"
+                android:padding="7dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+
+            <ImageButton
+                android:id="@+id/btn_Chat"
+                android:layout_below="@+id/btn_Plus"
+                android:src="@drawable/ic_chat_white"
+                android:background="@color/colorPrimary"
+                android:padding="7dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/btn_Beli"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+
+            <ImageButton
+                android:id="@+id/btn_Edit"
+                android:layout_below="@+id/btn_Chat"
+                android:src="@drawable/ic_edit"
+                android:background="@color/colorPrimary"
+                android:padding="7dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+
+            <ImageButton
+                android:id="@+id/btn_Edit_gambar"
+                android:layout_below="@+id/btn_Chat"
+                android:src="@drawable/ic_edit_image"
+                android:background="@color/colorPrimary"
+                android:padding="7dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_toRightOf="@+id/btn_Edit"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+
+            <ImageButton
+                android:id="@+id/btn_Hapus"
+                android:layout_below="@+id/btn_Chat"
+                android:src="@drawable/ic_delete"
+                android:background="@color/colorPrimary"
+                android:padding="7dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_toRightOf="@+id/btn_Edit_gambar"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

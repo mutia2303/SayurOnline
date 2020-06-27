@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobile.mutia.sayuronline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Sayur Online"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sayur2Activity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SayurDetailActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Sayur1Activity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".InsertDataActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Sayur3Activity" />
+        <activity android:name=".Sayur4Activity" />
+        <activity android:name=".Sayur5Activity" />
+
+        <service
+            android:name=".notification.FirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notification.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".EditSayurActivity" />
+        <activity android:name=".TransaksiActivity" />
+        <activity android:name=".EditGambarActivity" />
+    </application>
+
+</manifest>

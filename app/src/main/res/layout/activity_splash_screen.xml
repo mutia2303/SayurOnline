@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageSplash"
+        android:src="@drawable/splashscreen"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_below="@+id/imageSplash"
+        android:text="Sayur Online"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressSplash"
+        android:layout_below="@+id/txtJudul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "743261599379",
+    "firebase_url": "https://sayuronline-8c7f6.firebaseio.com",
+    "project_id": "sayuronline-8c7f6",
+    "storage_bucket": "sayuronline-8c7f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743261599379:android:2e4bf8370b37fc46983f66",
+        "android_client_info": {
+          "package_name": "com.mobile.mutia.sayuronline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743261599379-lbgrsgh1jmnlhiuil1hbc0uros7jkclq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobile.mutia.sayuronline",
+            "certificate_hash": "e1d19cd64447da755733023bdced74035d70b042"
+          }
+        },
+        {
+          "client_id": "743261599379-7o0dmk4cihflgrp5r020a32tiqiv08k7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwfhFQ3baaBV90iZAf5oYMVRFDJpjiSyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743261599379-7o0dmk4cihflgrp5r020a32tiqiv08k7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

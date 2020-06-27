@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textProfile"
+                android:text="Edit Profile"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Username"
+                android:layout_below="@+id/textProfile"
+                android:text="Username"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_below="@+id/Username"
+                android:hint="Username"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Nama"
+                android:layout_below="@+id/editUsername"
+                android:text="Nama"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editNama"
+                android:layout_below="@+id/Nama"
+                android:hint="Nama"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/No_hp"
+                android:layout_below="@+id/editNama"
+                android:text="No Hp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editNo_hp"
+                android:layout_below="@+id/No_hp"
+                android:hint="No Hp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Alamat"
+                android:layout_below="@+id/editNo_hp"
+                android:text="Alamat"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editAlamat"
+                android:hint="Alamat"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@+id/Alamat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_below="@id/editAlamat"
+                android:padding="7dp"
+                android:text="Edit Profile"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/buttons"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

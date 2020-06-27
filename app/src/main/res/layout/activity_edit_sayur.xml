@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSayurActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edit_data"
+                android:text="Edit Data Sayur"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_id_pasar"
+                android:layout_below="@+id/edit_data"
+                android:hint="Masukkan No Pasar"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/keterangan"
+                android:layout_below="@+id/edit_id_pasar"
+                android:text=" Keterangan"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ket_id_pasar"
+                android:layout_below="@+id/keterangan"
+                android:text=" 1. Pasar Padang Luar \n 2. Pasar Koto Baru \n 3. Pasar Aur Kuning \n 4. Pasar Baso \n 5. Pasar Lasi"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_nama_sayur"
+                android:layout_below="@+id/ket_id_pasar"
+                android:hint="Masukkan Nama Sayur"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_stok"
+                android:layout_below="@+id/edit_nama_sayur"
+                android:hint="Masukkan Jumlah Sayur"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_keterangan"
+                android:layout_below="@+id/edit_stok"
+                android:hint="Masukkan Keterangan Sayur"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_harga"
+                android:layout_below="@+id/edit_keterangan"
+                android:hint="Masukkan Harga Sayur per Keterangan"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_edit_data"
+                android:layout_below="@+id/edit_harga"
+                android:padding="7dp"
+                android:text="Edit Data"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/buttons"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
